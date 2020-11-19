@@ -1,0 +1,41 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="app_name">Laboratorio 6</string>
+    <string name="map_key" translatable="false">AIzaSyCG3IM5gKo8UglZLoGwi3e99-GK_HKdgOI</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="home_fragment">HOME FRAGMENT</string>
+    <string name="map_fragment">MAP FRAGMENT</string>
+    <string name="statictics_fragment">STATICTICS FRAGMENT</string>
+    <string name="recyclerview">recyclerview</string>
+    <string name="mensaje">mensaje</string>
+    <string name="calorias">calorias</string>
+    <string name="_123">_123</string>
+    <string name="_3_3">_3_3</string>
+    <string name="_200">_200</string>
+    <string name="_500">_500</string>
+    <string name="_5_5">_5_5</string>
+    <string name="_600">_600</string>
+    <string name="km">km</string>
+    <string name="pasos">pasos</string>
+    <string name="a_adir_canci_n">añadir canción</string>
+    <string name="busca_tu_canci_n">Busca tu canción:</string>
+    <string name="iniciar_entrenamiento">Iniciar entrenamiento</string>
+    <string name="iniciar_sesi_n">INICIAR SESIÓN</string>
+    <string name="nombre">Nombre:</string>
+    <string name="contrase_a">Contraseña:</string>
+    <string name="a_n_no_tienes_una_cuenta_reg_strate">¿Aún no tienes una cuenta? Regístrate</string>
+    <string name="ingresar">Ingresar</string>
+    <string name="ingresar_an_nimamente">Ingresar anónimamente</string>
+    <string name="registro_de_usuario">REGISTRO DE USUARIO</string>
+    <string name="correo">Correo:</string>
+    <string name="reg_strate">Regístrate</string>
+    <string name="entrenamiento_iniciado">Entrenamiento iniciado</string>
+    <string name="entrenamiento_en_pausa">Entrenamiento en pausa</string>
+    <string name="play">PLAY</string>
+    <string name="add">ADD</string>
+    <string name="pause">PAUSE</string>
+    <string name="terminar">TERMINAR</string>
+    <string name="cuenta">CUENTA</string>
+    <string name="clave">CLAVE</string>
+    <string name="usuario">Usuario:</string>
+</resources>
