@@ -1,5 +1,5 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
-    <string name="app_name">Laboratorio 6</string>
+    <string name="app_name">Music Fit</string>
     <string name="map_key" translatable="false">AIzaSyCG3IM5gKo8UglZLoGwi3e99-GK_HKdgOI</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
