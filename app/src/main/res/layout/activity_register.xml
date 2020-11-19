@@ -119,6 +119,7 @@
         android:background="@drawable/btn_uno"
         android:backgroundTint="#F31414"
         android:enabled="false"
+        android:onClick="Login"
         android:paddingStart="140dp"
         android:paddingEnd="140dp"
         android:text="@string/reg_strate"

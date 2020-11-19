@@ -98,7 +98,7 @@
         app:layout_constraintTop_toBottomOf="@+id/campoCorreo" />
 
     <Button
-        android:id="@+id/btnOpcionRegistro"
+        android:id="@+id/btnOpcionLogin"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="start"
@@ -132,6 +132,7 @@
         android:background="@drawable/btn_uno"
         android:backgroundTint="#FF9800"
         android:enabled="false"
+        android:onClick="onClick"
         android:paddingStart="85dp"
         android:paddingEnd="85dp"
         android:text="@string/ingresar_an_nimamente"
@@ -165,6 +166,7 @@
         android:layout_width="180dp"
         android:layout_height="wrap_content"
         android:background="@drawable/btn_uno"
+        android:onClick="Register"
         android:text="@string/a_n_no_tienes_una_cuenta_reg_strate"
         android:textColor="#FFFFFF"
         android:textStyle="bold"

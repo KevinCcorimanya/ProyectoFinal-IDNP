@@ -20,7 +20,7 @@ public class pantalla_de_carga extends AppCompatActivity {
 
         new Handler().postDelayed(new Runnable() {
             public void run() {
-                Intent intent = new Intent(pantalla_de_carga.this, MainActivity.class);
+                Intent intent = new Intent(pantalla_de_carga.this, Login.class);
                 startActivity(intent);
                 finish();
             };
