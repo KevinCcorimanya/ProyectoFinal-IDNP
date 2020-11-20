@@ -14,8 +14,6 @@
         android:layout_marginStart="20dp"
         android:layout_marginTop="328dp"
         android:contentDescription="@string/clave"
-        app:layout_constraintBottom_toBottomOf="@+id/campoPassword"
-        app:layout_constraintEnd_toStartOf="@+id/campoNombre"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
@@ -61,11 +59,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-<<<<<<< HEAD
         app:layout_constraintVertical_bias="0.105" />
-=======
-        app:layout_constraintVertical_bias="0.679" />
->>>>>>> 611a5804477fab2b47558463928a3e2db36c6108
+
 
     <EditText
         android:id="@+id/register_correo"
@@ -115,8 +110,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/campoCorreo" />
+        app:layout_constraintStart_toStartOf="parent" />
 
     <Button
         android:id="@+id/btnregister_registrar"
@@ -128,7 +122,6 @@
         android:background="@drawable/btn_uno"
         android:backgroundTint="#F31414"
         android:enabled="true"
-        android:onClick="Login"
         android:paddingStart="140dp"
         android:paddingEnd="130dp"
         android:text="@string/reg_strate"
@@ -136,17 +129,11 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-<<<<<<< HEAD
         app:layout_constraintHorizontal_bias="0.479"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.603" />
-=======
-        app:layout_constraintHorizontal_bias="0.421"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/campoPassword"
-        app:layout_constraintVertical_bias="0.225" />
->>>>>>> 611a5804477fab2b47558463928a3e2db36c6108
+
 
     <Button
         android:id="@+id/btnregister_anonimo"
@@ -158,7 +145,6 @@
         android:background="@drawable/btn_uno"
         android:backgroundTint="#FF9800"
         android:enabled="true"
-        android:onClick="MainActivity"
         android:paddingStart="85dp"
         android:paddingEnd="85dp"
         android:text="@string/ingresar_an_nimamente"
@@ -166,16 +152,10 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-<<<<<<< HEAD
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.708" />
-=======
-        app:layout_constraintHorizontal_bias="0.421"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnOpcionRegistro"
-        app:layout_constraintVertical_bias="0.255" />
->>>>>>> 611a5804477fab2b47558463928a3e2db36c6108
+
 
     <ImageView
         android:id="@+id/imageView"
@@ -184,8 +164,6 @@
         android:layout_marginStart="20dp"
         android:layout_marginTop="156dp"
         android:contentDescription="@string/correo"
-        app:layout_constraintBottom_toBottomOf="@+id/campoCorreo"
-        app:layout_constraintEnd_toStartOf="@+id/campoCorreo"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
@@ -199,8 +177,6 @@
         android:layout_marginStart="20dp"
         android:layout_marginTop="244dp"
         android:contentDescription="@string/cuenta"
-        app:layout_constraintBottom_toBottomOf="@+id/campoNombre"
-        app:layout_constraintEnd_toStartOf="@+id/campoNombre"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
