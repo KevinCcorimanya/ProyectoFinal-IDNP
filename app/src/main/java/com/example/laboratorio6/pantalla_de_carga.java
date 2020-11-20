@@ -9,7 +9,6 @@ import android.view.WindowManager;
 import androidx.appcompat.app.AppCompatActivity;
 
 public class pantalla_de_carga extends AppCompatActivity {
-    private final int DURACION_SPLASH=2000;
 
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -24,6 +23,6 @@ public class pantalla_de_carga extends AppCompatActivity {
                 startActivity(intent);
                 finish();
             };
-        }, DURACION_SPLASH);
+        }, 2000);
     }
 }
