@@ -1,21 +1,14 @@
 package com.example.laboratorio6;
 
-import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.fragment.app.Fragment;
-import androidx.fragment.app.FragmentTransaction;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.view.MenuItem;
 import android.view.View;
 
-import com.example.laboratorio6.fragemtns.HomeFragment;
-import com.example.laboratorio6.fragemtns.MapFragment;
-import com.example.laboratorio6.fragemtns.StatisticsFragment;
-import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 public class Login extends AppCompatActivity {
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -27,5 +20,11 @@ public class Login extends AppCompatActivity {
     public void Register(View view){
         Intent register = new Intent(this,Register.class);
         startActivity(register);
+    }
+
+    //método para ingresar en modo anónimo
+    public void MainActivity(View view){
+        Intent mainActivity = new Intent(this,MainActivity.class);
+        startActivity(mainActivity);
     }
 }

@@ -24,7 +24,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        ConexionSQLiteHelper conn=new ConexionSQLiteHelper(this,"bd_usuarios",null,1);
+
 
         showSelectedFragment(new HomeFragment());
         mBottomNavigationView = (BottomNavigationView) findViewById(R.id.bottomNavigation);
@@ -53,14 +53,4 @@ public class MainActivity extends AppCompatActivity {
                 .commit();
     }
 
-    public void onClick(View view){
-        Intent miIntent=null;
-        switch (view.getId()){
-            case R.id.btnOpcionRegistro:
-                miIntent=new Intent(MainActivity.this,RegistroUsuariosActivity.class);
-        }
-        if (miIntent!=null){
-            startActivity(miIntent);
-        }
-    }
 }
