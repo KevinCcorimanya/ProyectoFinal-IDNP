@@ -54,6 +54,7 @@ public class MapFragment extends Fragment implements OnMapReadyCallback {
 
     private void fetchLastLocation() {
         if (ActivityCompat.checkSelfPermission(getActivity(), Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED && ActivityCompat.checkSelfPermission(getActivity(), Manifest.permission.ACCESS_COARSE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
+            ActivityCompat.requestPermissions(getActivity(),new String[]{Manifest.permission.ACCESS_FINE_LOCATION},REQUEST_CODE);
             return;
         }
         Task<Location> task = fusedLocationProviderClient.getLastLocation();
