@@ -5,7 +5,7 @@
     android:id="@+id/container"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/exercise2">
+    android:background="@drawable/exercise4">
 
     <ImageView
         android:id="@+id/imageView3"
