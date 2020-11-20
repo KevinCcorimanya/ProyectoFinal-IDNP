@@ -110,7 +110,7 @@
         android:backgroundTint="#F31414"
         android:enabled="true"
         android:paddingStart="140dp"
-        android:paddingEnd="140dp"
+        android:paddingEnd="130dp"
         android:text="@string/ingresar"
         android:textColor="#FFFFFF"
         android:textStyle="bold"
@@ -132,12 +132,13 @@
         android:enabled="true"
         android:onClick="MainActivity"
         android:paddingStart="85dp"
-        android:paddingEnd="85dp"
+        android:paddingEnd="70dp"
         android:text="@string/ingresar_an_nimamente"
         android:textColor="#FFFFFF"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.434"
         app:layout_constraintStart_toStartOf="parent" />
 
     <Button
