@@ -2,22 +2,44 @@ package com.example.laboratorio6.entidades;
 
 public class Usuario {
 
-    private String correo;
-    private String nombre;
-    private Integer password;
+    int id;
+    String nombre, correo, password;
 
-    public Usuario(String correo, String nombre, Integer password) {
-        this.correo = correo;
+    public Usuario() {
+
+    }
+
+    public boolean isNull(){
+        if(nombre.equals("")&&correo.equals("")&&password.equals("")){
+            return false;
+        }else{
+            return true;
+        }
+    }
+
+    public Usuario(int id, String nombre, String correo, String password) {
+        this.id = id;
         this.nombre = nombre;
+        this.correo = correo;
         this.password = password;
     }
 
-    public String getCorreo() {
-        return correo;
+    @Override
+    public String toString() {
+        return "Usuario{" +
+                "id=" + id +
+                ", nombre='" + nombre + '\'' +
+                ", correo='" + correo + '\'' +
+                ", password='" + password + '\'' +
+                '}';
     }
 
-    public void setCorreo(String correo) {
-        this.correo = correo;
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
     }
 
     public String getNombre() {
@@ -28,11 +50,19 @@ public class Usuario {
         this.nombre = nombre;
     }
 
-    public Integer getPassword() {
+    public String getCorreo() {
+        return correo;
+    }
+
+    public void setCorreo(String correo) {
+        this.correo = correo;
+    }
+
+    public String getPassword() {
         return password;
     }
 
-    public void setPassword(Integer password) {
+    public void setPassword(String password) {
         this.password = password;
     }
 }
