@@ -10,9 +10,10 @@ import android.os.Bundle;
 import android.view.MenuItem;
 import android.view.View;
 
-import com.example.laboratorio6.fragemtns.HomeFragment;
+import com.example.laboratorio6.fragemtns.TrainingFragment;
 import com.example.laboratorio6.fragemtns.MapFragment;
 import com.example.laboratorio6.fragemtns.StatisticsFragment;
+import com.example.laboratorio6.fragemtns.TrainingFragment;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 public class MainActivity extends AppCompatActivity {
@@ -26,7 +27,7 @@ public class MainActivity extends AppCompatActivity {
 
 
 
-        showSelectedFragment(new HomeFragment());
+        showSelectedFragment(new TrainingFragment());
         mBottomNavigationView = (BottomNavigationView) findViewById(R.id.bottomNavigation);
 
         mBottomNavigationView.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
@@ -34,7 +35,7 @@ public class MainActivity extends AppCompatActivity {
             public boolean onNavigationItemSelected(@NonNull MenuItem menuItem) {
 
                 if (menuItem.getItemId() == R.id.menu_home){
-                    showSelectedFragment(new HomeFragment());
+                    showSelectedFragment(new TrainingFragment());
                 }
                 if (menuItem.getItemId() == R.id.menu_map){
                     showSelectedFragment(new MapFragment());
