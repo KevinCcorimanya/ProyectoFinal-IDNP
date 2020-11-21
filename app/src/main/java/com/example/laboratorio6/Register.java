@@ -53,4 +53,9 @@ public class Register extends AppCompatActivity implements View.OnClickListener 
                 break;
         }
     }
+
+    public void Principal(View view){
+        Intent principal = new Intent(this,MainActivity.class);
+        startActivity(principal);
+    }
 }

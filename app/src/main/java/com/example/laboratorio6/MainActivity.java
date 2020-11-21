@@ -2,18 +2,14 @@ package com.example.laboratorio6;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentTransaction;
 
-import android.content.Intent;
 import android.os.Bundle;
 import android.view.MenuItem;
-import android.view.View;
 
-import com.example.laboratorio6.fragemtns.TrainingFragment;
+import com.example.laboratorio6.fragemtns.HomeFragment;
 import com.example.laboratorio6.fragemtns.MapFragment;
 import com.example.laboratorio6.fragemtns.StatisticsFragment;
-import com.example.laboratorio6.fragemtns.TrainingFragment;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 public class MainActivity extends AppCompatActivity {
@@ -27,7 +23,7 @@ public class MainActivity extends AppCompatActivity {
 
 
 
-        showSelectedFragment(new TrainingFragment());
+        showSelectedFragment(new HomeFragment());
         mBottomNavigationView = (BottomNavigationView) findViewById(R.id.bottomNavigation);
 
         mBottomNavigationView.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
@@ -35,7 +31,7 @@ public class MainActivity extends AppCompatActivity {
             public boolean onNavigationItemSelected(@NonNull MenuItem menuItem) {
 
                 if (menuItem.getItemId() == R.id.menu_home){
-                    showSelectedFragment(new TrainingFragment());
+                    showSelectedFragment(new HomeFragment());
                 }
                 if (menuItem.getItemId() == R.id.menu_map){
                     showSelectedFragment(new MapFragment());
@@ -48,7 +44,11 @@ public class MainActivity extends AppCompatActivity {
         });
     }
 
-    private void showSelectedFragment(Fragment fragment){
+    private void showSelectedFragment(HomeFragment homeFragment) {
+    }
+
+
+    private void showSelectedFragment(androidx.fragment.app.Fragment fragment){
         getSupportFragmentManager().beginTransaction().replace(R.id.container,fragment)
                 .setTransition(FragmentTransaction.TRANSIT_FRAGMENT_FADE)
                 .commit();
