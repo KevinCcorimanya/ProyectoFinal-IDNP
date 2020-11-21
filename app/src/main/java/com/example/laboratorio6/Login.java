@@ -45,7 +45,11 @@ public class Login extends AppCompatActivity implements View.OnClickListener {
                     Usuario ux = dao.getUsuario(n,p);
                     Toast.makeText(this,"Datos Correctos",Toast.LENGTH_LONG).show();
                     Intent i2 = new Intent(this,MainActivity.class);
+                    i2.putExtra("id",ux.getId());
                     startActivity(i2);
+                    finish();
+                }else{
+                    Toast.makeText(this,"Nombre y/o Password incorrectos",Toast.LENGTH_LONG).show();
                 }
                 break;
             case R.id.btnlogin_registrar:
