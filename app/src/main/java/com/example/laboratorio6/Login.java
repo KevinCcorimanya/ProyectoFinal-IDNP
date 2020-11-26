@@ -44,7 +44,7 @@ public class Login extends AppCompatActivity implements View.OnClickListener {
                 }else if(dao.login(n,p)==1){
                     Usuario ux = dao.getUsuario(n,p);
                     Toast.makeText(this,"Datos Correctos",Toast.LENGTH_LONG).show();
-                    Intent i2 = new Intent(this,MainActivity.class);
+                    Intent i2 = new Intent(Login.this,MainActivity.class);
                     i2.putExtra("id",ux.getId());
                     startActivity(i2);
                     finish();
@@ -53,7 +53,7 @@ public class Login extends AppCompatActivity implements View.OnClickListener {
                 }
                 break;
             case R.id.btnlogin_registrar:
-                Intent i = new Intent(this,Register.class);
+                Intent i = new Intent(Login.this,Register.class);
                 startActivity(i);
                 break;
         }

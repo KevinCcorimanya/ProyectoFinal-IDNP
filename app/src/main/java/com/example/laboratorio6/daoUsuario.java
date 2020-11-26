@@ -49,8 +49,8 @@ public class daoUsuario {
     }
 
     public ArrayList<Usuario> selectUsuario(){
-        ArrayList<Usuario> lista = new ArrayList<Usuario>();
         lista.clear();
+        ArrayList<Usuario> lista = new ArrayList<Usuario>();
         Cursor cr = sql.rawQuery("select * from usuario",null);
         if(cr!=null&&cr.moveToFirst()){
             do {
@@ -70,7 +70,7 @@ public class daoUsuario {
         Cursor cr = sql.rawQuery("select * from usuario",null);
         if(cr!=null&&cr.moveToFirst()){
             do {
-                if(cr.getString(1).equals(u)&&cr.getString(2).equals(p)){
+                if(cr.getString(2).equals(u)&&cr.getString(3).equals(p)){
                     a++;
                 }
             }while (cr.moveToNext());

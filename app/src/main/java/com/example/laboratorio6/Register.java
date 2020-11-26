@@ -21,6 +21,7 @@ public class Register extends AppCompatActivity implements View.OnClickListener 
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_register);
+
         nombre = (EditText) findViewById(R.id.register_nombre);
         correo = (EditText) findViewById(R.id.register_correo);
         password = (EditText) findViewById(R.id.register_password);
@@ -28,6 +29,7 @@ public class Register extends AppCompatActivity implements View.OnClickListener 
         btnAnonimo = (Button) findViewById(R.id.btnregister_anonimo);
 
         btnRegistrarse.setOnClickListener(this);
+        dao = new daoUsuario(this);
     }
 
     @Override
@@ -41,7 +43,7 @@ public class Register extends AppCompatActivity implements View.OnClickListener 
                 if (!u.isNull()){
                     Toast.makeText(this,"Error: Campos Vacios",Toast.LENGTH_LONG).show();
                 }else if(dao.insertUsuario(u)){
-                    Toast.makeText(this,"Error: Registro exitoso",Toast.LENGTH_LONG).show();
+                    Toast.makeText(this,"Registro exitoso",Toast.LENGTH_LONG).show();
                     Intent i2 = new Intent(this,Login.class);
                     startActivity(i2);
                     finish();
