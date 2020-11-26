@@ -1,5 +1,6 @@
 package com.example.laboratorio6.entidades;
 
+
 public class Usuario {
 
     int id;
