@@ -31,7 +31,7 @@
         android:layout_marginTop="3dp"
         android:layout_marginEnd="24dp"
         android:layout_marginBottom="16dp"
-        android:text="@string/añadir_cancion"
+        android:text="@string/a_adir_canci_n"
         android:textColor="@android:color/white"
         android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/linearLayout"
@@ -45,6 +45,7 @@
         android:id="@+id/play_pause"
         android:layout_width="97dp"
         android:layout_height="96dp"
+        android:background="@drawable/play"
         android:clickable="true"
         android:contentDescription="@string/play"
         android:focusable="true"
@@ -52,8 +53,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.143"
-        android:background="@drawable/play" />
+        app:layout_constraintVertical_bias="0.143" />
 
     <TextView
         android:id="@+id/textView"

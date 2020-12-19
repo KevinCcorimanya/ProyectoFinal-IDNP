@@ -39,4 +39,5 @@
     <string name="clave">CLAVE</string>
     <string name="usuario">Usuario:</string>
     <string name="button">Button</string>
+    <string name="a_adir_canci_n">añadir canción</string>
 </resources>

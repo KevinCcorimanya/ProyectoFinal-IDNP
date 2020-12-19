@@ -10,11 +10,13 @@ import android.view.MenuItem;
 import com.example.laboratorio6.fragemtns.HomeFragment;
 import com.example.laboratorio6.fragemtns.MapFragment;
 import com.example.laboratorio6.fragemtns.StatisticsFragment;
+import com.google.android.gms.location.FusedLocationProviderClient;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 public class MainActivity extends AppCompatActivity {
 
     BottomNavigationView mBottomNavigationView;
+    private FusedLocationProviderClient mFusedLocationClient;
 
     @Override
     protected void onCreate(Bundle savedInstanceState){
